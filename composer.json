@@ -1,7 +1,7 @@
 {
 	"name" : "drupal/layout_options",
 	"type" : "drupal-module",
-	"description" : "Layout Options - Configuration options thru Yaml files",
+	"description" : "Fork of Layout Options - Configuration options thru Yaml files to work with D9",
 	"keywords" : [
 		"Drupal"
 	],
