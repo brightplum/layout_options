@@ -1,0 +1,42 @@
+diff --git a/layout_options.info.yml b/layout_options.info.yml
+index 59ca5e3..95a1cb8 100644
+--- a/layout_options.info.yml
++++ b/layout_options.info.yml
+@@ -2,6 +2,7 @@ name: 'Layout Options'
+ type: module
+ description: 'Provides a layout plugin that allows for styling options to be added to layouts via YAML files'
+ core: 8.x
++core_version_requirement: ^8 || ^9
+ package: 'Layout'
+ dependencies:
+   - drupal:layout_discovery
+diff --git a/modules/layout_options_ui/layout_options_ui.info.yml b/modules/layout_options_ui/layout_options_ui.info.yml
+index f120820..6a03f17 100644
+--- a/modules/layout_options_ui/layout_options_ui.info.yml
++++ b/modules/layout_options_ui/layout_options_ui.info.yml
+@@ -2,6 +2,7 @@ name: 'Layout Options UI'
+ type: module
+ description: 'Provides a way to replace the default Layout class with the Layout Options class in existing templates'
+ core: 8.x
++core_version_requirement: ^8 || ^9
+ package: 'Layout'
+ configure: layout_options_ui.settings
+ 
+diff --git a/tests/modules/layout_options_test/layout_options_test.info.yml b/tests/modules/layout_options_test/layout_options_test.info.yml
+index d01f43f..a3c6746 100644
+--- a/tests/modules/layout_options_test/layout_options_test.info.yml
++++ b/tests/modules/layout_options_test/layout_options_test.info.yml
+@@ -4,3 +4,4 @@ description: 'Support module for testing layout optionss.'
+ package: Testing
+ version: VERSION
+ core: 8.x
++core_version_requirement: ^8 || ^9
+diff --git a/tests/modules/layout_options_test_bad_yaml/layout_options_test_bad_yaml.info.yml b/tests/modules/layout_options_test_bad_yaml/layout_options_test_bad_yaml.info.yml
+index 8b6a49b..9cc0418 100644
+--- a/tests/modules/layout_options_test_bad_yaml/layout_options_test_bad_yaml.info.yml
++++ b/tests/modules/layout_options_test_bad_yaml/layout_options_test_bad_yaml.info.yml
+@@ -4,3 +4,4 @@ description: 'Support module for testing layout options handling of yaml syntax
+ package: Testing
+ version: VERSION
+ core: 8.x
++core_version_requirement: ^8 || ^9
